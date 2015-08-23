@@ -1,0 +1,13 @@
+
+Just wanted to add that the "run a webserver" answer seems quite daunting, but if you have python on your system (installed by default at least on MacOS and any Linux distribution) it's as easy as:
+
+python -m SimpleHTTPServer 8000
+So if you have your html file myfile.html in a folder, say mydir, all you have to do is:
+
+cd /path/to/mydir
+python -m SimpleHTTPServer 8000
+Then point your browser to:
+
+http://localhost:8000/myfile.html
+And you are done! Works on all browsers, without disabling web security, allowing local files, or even restarting the browser with command line options.
+
